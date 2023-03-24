@@ -1,0 +1,434 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    transition: .4s;
+}
+
+#header {
+    padding: 25px 0;
+    position: sticky;
+    /*width: 100%;*/
+    z-index: 100;
+    top: 0;
+    background: #fff;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: 2s alternate ani;
+}
+
+@keyframes ani {
+    0% {
+        transform: translateY(-500px);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo h1 {
+    color: #000;
+    font-size: 28px;
+    font-weight: 700;
+    padding-right: 84px;
+}
+
+.header-logo a {
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+    padding: 0 26px;
+    transition: .5s;
+}
+
+.header-logo a:hover {
+    color: blue;
+    text-decoration-line: underline;
+}
+
+.header-btn button {
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 7px;
+    margin: 0 10px;
+    background: #ff4343;
+    border: 2px solid #ff4343;
+}
+
+.header-btn button:hover {
+    color: #ff4343;
+    border: 2px solid #ff4343;
+    background: transparent;
+}
+
+#hero {
+    background: #100E14;
+    padding: 30px 0;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero h1 {
+    font-weight: 400;
+    font-size: 63px;
+    text-align: center;
+    color: #FFFFFF;
+    animation: 2s alternate te;
+}
+
+@keyframes te {
+    0% {
+        transform: translateX(-500px);
+        color: orange;
+    }
+    25% {
+        color: blue;
+    }
+    50% {
+        color: black;
+    }
+    80% {
+        color: red;
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.hero p {
+    font-weight: 400;
+    font-size: 28px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+    animation: 2s alternate sp;
+    padding: 44px 0 73px 0;
+}
+
+@keyframes sp {
+    0% {
+        transform: translateX(500px);
+        color: orange;
+    }
+    25% {
+        color: blue;
+    }
+    50% {
+        color: black;
+    }
+    80% {
+        color: red;
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.hero-btn button {
+    z-index: 103;
+    display: flex;
+    align-items: center;
+    padding: 15px 28px;
+    font-weight: 400;
+    font-size: 23px;
+    background: #FF4343;
+    border-radius: 8px;
+    color: #FFFFFF;
+    animation: 3s alternate bt;
+}
+
+.hero button ion-icon {
+    font-size: 25px;
+    padding-left: 14px;
+}
+
+@keyframes bt {
+    0% {
+        opacity: 0;
+        transform: scale(1.1);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.hero h6 {
+    font-weight: 400;
+    font-size: 18px;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.hero-img {
+    display: flex;
+    /*border-radius: 2px;*/
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-img-two {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#lesson {
+    background: #100E14;
+    padding: 58px 0;
+}
+
+.lesson {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.lesson h1 {
+    font-weight: 400;
+    font-size: 58px;
+    color: #FFFFFF;
+}
+
+.lesson p {
+    font-weight: 400;
+    font-size: 26px;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 38px 0;
+}
+
+.lesson-im {
+    display: flex;
+    /*border-radius: 2px;*/
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    top: 50px;
+}
+
+.lesson-im-two {
+    position: absolute;
+    padding-left: 355px;
+    top: 0;
+    bottom: 80px;
+}
+
+#work {
+    background: #100E14;
+    padding: 58px 0;
+}
+
+.work {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.work h1 {
+    font-weight: 400;
+    font-size: 58px;
+    color: #FFFFFF;
+}
+
+.work p {
+    font-weight: 400;
+    font-size: 27px;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 25px 0;
+}
+
+.work p span {
+    color: #FFFFFF;
+    font-size: 28px;
+}
+
+#inter {
+    background: #100E14;
+    padding: 58px 0;
+}
+
+.inter {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.inter h1 {
+    font-weight: 400;
+    font-size: 54px;
+    color: #FFFFFF;
+}
+
+.inter p {
+    font-weight: 400;
+    font-size: 27px;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 25px 0;
+}
+
+.inter p span {
+    color: #FFFFFF;
+    font-size: 28px;
+}
+
+#media {
+    background: #100E14;
+    padding: 60px 0;
+}
+
+.media {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 350px;
+    width: 562px;
+    padding: 50px 0 5px 30px;
+    background: #1D1B24;
+    border-radius: 40px;
+}
+
+.social-block div{
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 10px;
+    width: 100px;
+    height: 353px;
+    border-radius: 5px 0 0 0;
+}
+
+.social-block div ion-icon {
+    /*display: flex;*/
+    /*align-items: flex-start;*/
+    font-size: 25px;
+    padding-top: 13px;
+}
+
+.media h1 {
+    font-weight: 400;
+    font-size: 58px;
+    color: #FFFFFF;
+}
+
+.media p {
+    font-weight: 400;
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 25px 0;
+}
+
+.media p span {
+    color: #FFFFFF;
+    font-size: 26px;
+}
+
+.red {
+    background: red;
+    color: white;
+}
+
+.ins {
+    background: brown;
+    color: white;
+}
+
+.twi {
+    background: blueviolet;
+    color: white;
+}
+
+.tik {
+    background: black;
+    color: white;
+}
+
+.twit {
+    background: darkturquoise;
+    color: white;
+}
+
+.lin {
+    background: dodgerblue;
+    color: white;
+}
+
+.mai {
+    background: darkcyan;
+    color: white;
+}
+
+.what {
+    background: limegreen;
+    color: white;
+}
+
+#craft {
+    background: #100E14;
+    padding: 60px 0;
+}
+.craft {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.best h1 {
+    font-weight: 400;
+    font-size: 61px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.best p {
+    font-weight: 400;
+    font-size: 26px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 38px 0;
+}
+.craft-img {
+    padding: 0 20px;
+    border-radius: 8px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 31.25%, #000000 100%);
+    color: #000000;
+}
